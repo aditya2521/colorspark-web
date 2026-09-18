@@ -5,7 +5,7 @@ export const metadata = {
   description: "Privacy Policy for the ColorSpark color-by-number game app.",
 };
 
-const LAST_UPDATED = "July 26, 2026";
+const LAST_UPDATED = "August 25, 2026";
 
 export default function PrivacyPage() {
   return (
@@ -62,7 +62,7 @@ export default function PrivacyPage() {
           </Section>
 
           <Section title="5. Children's Privacy (COPPA)" color="#34AADC">
-            <p>ColorSpark complies with the Children's Online Privacy Protection Act (COPPA) and similar international children's privacy laws.</p>
+            <p>ColorSpark complies with the Children&apos;s Online Privacy Protection Act (COPPA) and similar international children&apos;s privacy laws.</p>
             <p>We do not knowingly collect personal information from children under the age of 13. Since we collect no personal data from any user, there is nothing specific to children that we collect, process, or disclose.</p>
             <p>Parents and guardians can feel confident that ColorSpark does not:</p>
             <ul>
@@ -98,7 +98,7 @@ export default function PrivacyPage() {
             <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
             <div className="bg-gray-50 rounded-2xl p-5 mt-3">
               <p className="m-0 font-semibold text-gray-700">ColorSpark Support</p>
-              <p className="m-0 text-gray-500">Email: <a href="mailto:support@colorspark.app" className="text-[#34AADC] hover:underline">support@colorspark.app</a></p>
+              <p className="m-0 text-gray-500">Email: <a href="mailto:aditya159121@gmail.com" className="text-[#34AADC] hover:underline">aditya159121@gmail.com</a></p>
             </div>
             <p>We aim to respond to all inquiries within 5 business days.</p>
           </Section>

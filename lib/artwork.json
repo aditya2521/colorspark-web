@@ -1,0 +1,137 @@
+[
+  {
+    "id": "fish",
+    "name": "Happy Fish",
+    "category": "animals"
+  },
+  {
+    "id": "butterfly",
+    "name": "Beautiful Butterfly",
+    "category": "animals"
+  },
+  {
+    "id": "cat",
+    "name": "Cute Cat",
+    "category": "animals"
+  },
+  {
+    "id": "underwater-garden",
+    "name": "Coral Reef Garden",
+    "category": "nature"
+  },
+  {
+    "id": "sunny",
+    "name": "Sunny Day",
+    "category": "nature"
+  },
+  {
+    "id": "daisy",
+    "name": "Daisy Flower",
+    "category": "nature"
+  },
+  {
+    "id": "apple",
+    "name": "Red Apple",
+    "category": "food"
+  },
+  {
+    "id": "icecream",
+    "name": "Ice Cream Cone",
+    "category": "food"
+  },
+  {
+    "id": "cupcake",
+    "name": "Yummy Cupcake",
+    "category": "food"
+  },
+  {
+    "id": "dino",
+    "name": "Friendly Dino",
+    "category": "mythical"
+  },
+  {
+    "id": "dragon",
+    "name": "Friendly Dragon",
+    "category": "mythical"
+  },
+  {
+    "id": "unicorn",
+    "name": "Magic Unicorn",
+    "category": "mythical"
+  },
+  {
+    "id": "simple-house",
+    "name": "Cozy Cottage House",
+    "category": "architecture"
+  },
+  {
+    "id": "castle",
+    "name": "Medieval Castle",
+    "category": "architecture"
+  },
+  {
+    "id": "eiffel",
+    "name": "Eiffel Tower",
+    "category": "architecture"
+  },
+  {
+    "id": "rocket",
+    "name": "Space Rocket",
+    "category": "space"
+  },
+  {
+    "id": "ufo",
+    "name": "UFO",
+    "category": "space"
+  },
+  {
+    "id": "spacegirl",
+    "name": "Space Girl",
+    "category": "space"
+  },
+  {
+    "id": "fun-1",
+    "name": "Happy Face",
+    "category": "fun"
+  },
+  {
+    "id": "fun-2",
+    "name": "Frosty Snowman",
+    "category": "fun"
+  },
+  {
+    "id": "fun-3",
+    "name": "Ghost",
+    "category": "fun"
+  },
+  {
+    "id": "mandala-1",
+    "name": "Moroccan Star Medallion",
+    "category": "mandalas"
+  },
+  {
+    "id": "mandala-2",
+    "name": "Moroccan Zellige Tile",
+    "category": "mandalas"
+  },
+  {
+    "id": "mandala-3",
+    "name": "Andalusian Palace Tile",
+    "category": "mandalas"
+  },
+  {
+    "id": "submarine",
+    "name": "Yellow Submarine",
+    "category": "vehicles"
+  },
+  {
+    "id": "train-220",
+    "name": "Steam Locomotive 1880",
+    "category": "vehicles"
+  },
+  {
+    "id": "f1-223",
+    "name": "Formula 1 Monaco GP",
+    "category": "vehicles"
+  }
+]

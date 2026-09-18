@@ -1,0 +1,88 @@
+.studio {
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #f6e3d7;
+  border-radius: 25px;
+  box-shadow: 0 20px 65px -30px #7f685a35, 0 3px 0 #f9ebe2;
+}
+.header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 22px 24px; }
+.identity { display: flex; align-items: center; gap: 11px; }
+.icon { display: grid; place-items: center; width: 41px; height: 41px; border-radius: 13px; background: #faf0ea; color: #a58e80; }
+.eyebrow { display: block; font-size: 8px; letter-spacing: 1.6px; font-weight: 900; color: #b9957e; margin-bottom: 4px; }
+.identity h3 { font-size: 16px; line-height: 1.3; letter-spacing: -.4px; font-weight: 900; color: #483f39; }
+.preview { display: inline-flex; align-items: center; gap: 5px; border: 1px solid #f7e5d9; border-radius: 20px; padding: 6px 9px; font-size: 8px; color: #9d8575; white-space: nowrap; }
+.preview > span, .smallDot { width: 5px; height: 5px; display: inline-block; border-radius: 50%; background: #91b69c; }
+.canvasArea { padding: 16px 24px 12px; background: #fcf5f1; border-block: 1px solid #f9eae1; }
+.canvasCaption { display: flex; align-items: center; justify-content: space-between; font-size: 8px; color: #b8927a; letter-spacing: 1px; margin-bottom: 16px; }
+.canvasCaption > span:first-child { font-weight: 900; }
+.canvasCaption > span:last-child { display: flex; align-items: center; gap: 5px; letter-spacing: 0; }
+.paper { width: min(100%, 315px); margin-inline: auto; padding: 8px; background: white; border: 1px solid #f5ded0; border-radius: 7px; box-shadow: 0 7px 18px #4c423c13; }
+.art { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; border-radius: 2px; overflow: hidden; }
+.region { cursor: pointer; transition: fill .25s; }
+.region[aria-disabled="true"] { cursor: default; }
+.region:not([aria-disabled="true"]):hover { stroke: #ed692f; stroke-width: 1.7; }
+.region:focus-visible { outline: none; stroke: #ed692f; stroke-width: 2.4; }
+.hinted { stroke: #ed692f; stroke-width: 3; stroke-dasharray: 4 2; }
+.number { font-family: inherit; font-size: 7px; font-weight: 700; fill: #856e5f; paint-order: stroke; stroke: #fffefb; stroke-width: 1.6px; stroke-linejoin: round; }
+.activeNumber { fill: #947a69; font-weight: 900; stroke: #faeee7; }
+.canvasTools { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; gap: 10px; }
+.canvasNote { display: inline-flex; gap: 6px; align-items: center; font-size: 9px; color: #a48d7f; }
+.tools { display: flex; gap: 6px; }
+.tools button { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #f5dfd1; background: #fff; border-radius: 10px; color: #9e8677; }
+.tools button:disabled { opacity: .35; cursor: default; }
+.tools button:not(:disabled):hover { background: #f8e7dc; }
+.controls { padding: 22px 24px 16px; }
+.progressHeading { display: flex; justify-content: space-between; align-items: center; gap: 10px; font-size: 10px; font-weight: 800; color: #a28b7c; }
+.progressHeading strong { font-size: 18px; color: #9b8171; font-weight: 900; }
+.progressHeading strong > span { font-size: 10px; margin-left: 2px; }
+.progress { height: 5px; background: #faeee6; border-radius: 10px; overflow: hidden; margin-top: 8px; }
+.progress > span { display: block; height: 100%; background: #c2a28d; border-radius: inherit; transition: width .3s; }
+.paletteHeading { display: flex; align-items: center; justify-content: space-between; margin-top: 21px; gap: 10px; }
+.paletteHeading > div { display: flex; align-items: center; gap: 9px; font-size: 12px; font-weight: 900; color: #5e4d43; }
+.selectedDot { display: block; width: 25px; height: 25px; border: 4px solid white; outline: 1px solid #f6e1d4; border-radius: 50%; }
+.paletteHeading small { display: block; font-size: 9px; color: #b69078; font-weight: 600; margin-top: 2px; }
+.hint { display: inline-flex; align-items: center; justify-content: center; gap: 5px; padding: 8px 11px; min-height: 36px; border: 1px solid #f7e5da; background: #fcf6f3; border-radius: 10px; font-size: 10px; font-weight: 800; color: #b48d74; }
+.hint:hover { background: #f8e8de; }
+.hint:disabled { opacity: .4; cursor: default; }
+.palette { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 7px; padding-top: 16px; }
+.swatch { height: 44px; display: grid; place-items: center; padding: 3px; border: 1px solid #f7e5d9; border-radius: 12px; background: #fff; transition: background .2s, border-color .2s; }
+.swatch > span { width: 31px; height: 31px; display: grid; place-items: center; border-radius: 50%; box-shadow: inset 0 0 0 1px #483e3810; }
+.swatch > span > span { width: 20px; height: 20px; display: grid; place-items: center; background: #ffffffed; border-radius: 50%; color: #514740; font-size: 10px; font-weight: 900; }
+.swatch[aria-pressed="true"] { border: 2px solid #b69077; padding: 2px; background: #faf0ea; box-shadow: 0 2px 7px #ed692f15; }
+.swatch:not(:disabled):hover { background: #fbf1eb; border-color: #caaf9d; }
+.swatch:disabled { background: #fdf7f3; opacity: .5; cursor: default; }
+.status { min-height: 38px; margin: 15px 0 0; display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 10px; line-height: 1.6; text-align: center; color: #b69077; }
+.status svg { flex-shrink: 0; }
+.again { display: flex; align-items: center; justify-content: center; gap: 8px; background: #ed692f; color: #fff; border: 0; border-radius: 12px; padding: 12px 20px; margin: 12px auto 4px; font-size: 12px; font-weight: 800; }
+@media (min-width: 761px) and (max-width: 1000px) {
+  .header, .controls { padding-inline: 16px; }
+  .canvasArea { padding-inline: 16px; }
+  .preview { display: none; }
+  .palette { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .studio { max-width: 480px; margin-inline: auto; border-radius: 20px; }
+  .header { padding: 18px; }
+  .identity h3 { font-size: 15px; }
+  .canvasArea { padding: 14px 18px 10px; }
+  .controls { padding: 18px; }
+  .canvasNote { font-size: 8px; }
+  .palette { gap: 8px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .swatch { height: 44px; }
+  .tools button { width: 40px; height: 40px; }
+}
+@media (max-width: 380px) {
+  .preview { display: none; }
+  .canvasCaption { font-size: 7px; }
+  .progressHeading { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .region, .swatch, .progress > span { transition: none; }
+}
+
+/* Warm accents connect the studio to the app’s original palette. */
+.region:focus-visible, .hinted { stroke: #e18a3b; }
+.activeNumber { fill: #b66b2b; stroke: #fff0dc; }
+.swatch[aria-pressed="true"] { border-color: #e6954e; background: #fff3e3; }

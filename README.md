@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ColorSpark web
 
-## Getting Started
+The last deployed ColorSpark landing page, restored from Firebase Hosting, with its original layout, content, and rainbow styling. The requested additions are the Three.js hero artwork, an illustrated gallery below the original category cards, and a coloring studio after How to Play.
 
-First, run the development server:
+## Development
 
-```bash
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. To use a different port, run `npm run dev -- --port 3100`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Checks and production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+npm run lint
+npm run build
+```
 
-## Learn More
+The build exports a static site to `out/`, compatible with the existing Firebase Hosting configuration. Preview that export with `python3 -m http.server 3100 --directory out`.
 
-To learn more about Next.js, take a look at the following resources:
+## Landing page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/page.tsx`: page sections and copy.
+- `app/globals.css`: original global styling and reduced-motion support.
+- `app/retained-sections.css`: styles scoped to the retained 3D artwork and gallery.
+- `components/ColorScene.tsx`: dynamically loaded Three.js pencil scene. Animation stops when hidden or offscreen, honors reduced motion, and releases GPU resources on unmount. The artwork remains visible without WebGL.
+- `components/ArtGallery.tsx`: nine filterable categories, with three real game artworks per category.
+- `components/ColorDemo.tsx`: keyboard-accessible color-by-number sample with palette selection, progress, completion, and reset. This preview does not save progress.
+- `public/art/`, `lib/artwork.json`, and `lib/demo-art.json`: artwork derived from the original templates in `../ColorSpark/src/data/templates/`.
+- Download buttons link to the App Store and Google Play on mobile and show store QR codes on desktop. Dialogs support Escape, keyboard focus containment, and focus restoration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The page uses Nunito through `next/font/google`, so a fresh build needs access to Google Fonts.

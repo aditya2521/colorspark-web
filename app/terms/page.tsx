@@ -5,7 +5,8 @@ export const metadata = {
   description: "Terms and Conditions for using the ColorSpark color-by-number game app.",
 };
 
-const LAST_UPDATED = "July 26, 2026";
+
+const LAST_UPDATED = "August 25, 2026";
 
 export default function TermsPage() {
   return (
@@ -111,7 +112,7 @@ export default function TermsPage() {
             <p>If you have any questions about these Terms and Conditions, please contact us:</p>
             <div className="bg-gray-50 rounded-2xl p-5 mt-3">
               <p className="font-semibold text-gray-700 m-0">ColorSpark Support</p>
-              <p className="text-gray-500 m-0">Email: <a href="mailto:support@colorspark.app" className="text-[#34AADC] hover:underline">support@colorspark.app</a></p>
+              <p className="text-gray-500 m-0">Email: <a href="mailto:aditya159121@gmail.com" className="text-[#34AADC] hover:underline">aditya159121@gmail.com</a></p>
             </div>
             <p>We aim to respond to all inquiries within 5 business days.</p>
           </Section>
